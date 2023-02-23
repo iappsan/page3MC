@@ -2,10 +2,56 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey form</title>
 </head>
 <body>
-    
+    <h1 id="title">Our survey form</h1>
+    <p id="description">This is our new survey form!!!</p>
+    <form action="#" id="survey-form">
+
+        <div>
+            <label for="name" id="name-label">Here put ur name</label>
+            <input type="text" name="" id="name" placeholder="Here put ur name">
+            <br>
+            <label for="email" id="email-label">Here put ur mail</label>
+            <input type="email" name="" id="email" placeholder="Here put ur mail">
+            <br>
+            <label for="number" id="number-label">Here put ur number</label>
+            <input type="number" name="" id="number" max="100" min="0" placeholder="Here put ur number">
+        </div>
+        
+        <div>
+            <select name="" id="dropdown">
+                <option value="1">option 1</option>
+                <option value="2">option 2</option>
+                <option value="3">option 3</option>
+            </select>
+        </div>
+
+        <div id="radio-opt">
+            <input name="options" type="radio" value="Hi">Hi
+            <input name="options" type="radio" value="Hello">Hello
+            <input name="options" type="radio" value="Heeelloooo">Heeelloooo
+        </div>
+
+        <label for="bros">Select your number of brothers</label>
+        <div id="bros">
+            <input type="checkbox" value="1"> One
+            <input type="checkbox" value="2"> Two
+            <input type="checkbox" value="3"> Three
+            <input type="checkbox" value="4"> Four
+        </div>
+
+        <div>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" id="submit" value="Submit">
+        </div>
+
+    </form>
 </body>
 </html>
